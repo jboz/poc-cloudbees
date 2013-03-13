@@ -16,6 +16,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>6.0</version>
@@ -58,7 +63,6 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-            <!-- $ mvn bees:deploy -Dbees.appid=jboz/poc-cloudbees -Dbees.apikey=59F038965472467C -Dbees.secret=FYIOGNSZQBRSMHT7ZNFJGJVE+7NKBFBHXTWJZV4PGEM= -->
             <plugin>
                 <groupId>com.cloudbees</groupId>
                 <artifactId>bees-maven-plugin</artifactId>
